@@ -9,18 +9,18 @@ public class App {
                 (HelloWorld) applicationContext.getBean("helloworld");
         HelloWorld bean1 =
                 (HelloWorld) applicationContext.getBean("helloworld");
-//        System.out.println(bean.getMessage());
-//        System.out.println(bean1.getMessage());
-        System.out.println("Сравнение бинов класса HelloWorld (создан один бин?) - " + bean.equals(bean1));
+        System.out.println(bean.toString());
+        System.out.println(bean1.toString());
+        System.out.println("Сравнение бинов класса HelloWorld (создан один бин?) - " + bean.toString().equals(bean1.toString()));
 
         Cat beanCat =
                 (Cat) applicationContext.getBean("cat");
 
         Cat beanCat1 =
                 (Cat) applicationContext.getBean("cat");
-//        System.out.println(beanCat.getMessage());
-//        System.out.println(beanCat1.getMessage());
-        System.out.println("Сравнение бинов класса Cat (создан один бин?) - " + beanCat.equals(beanCat1));
+        System.out.println(beanCat.toString());
+        System.out.println(beanCat1.toString());
+        System.out.println("Сравнение бинов класса Cat (создан один бин?) - " + beanCat.toString().equals(beanCat1.toString()));
 
     }
 }
